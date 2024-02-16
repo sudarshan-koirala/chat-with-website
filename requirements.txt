@@ -1,7 +1,8 @@
 langchain
-openai
+langchainhub
 streamlit
-python-dotenv
 bs4
 chromadb
 tiktoken
+unstructured
+chainlit
