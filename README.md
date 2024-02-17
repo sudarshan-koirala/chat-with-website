@@ -1,5 +1,5 @@
 # chat-with-website
-Simple Streamlit app to have interaction with your website URL.
+Simple Streamlit as well as Chainlit app to have interaction with your website URL.
 
 ### Chat with your documents 🚀
 - [OpenAI model](https://platform.openai.com/docs/models) as Large Language model
