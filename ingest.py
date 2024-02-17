@@ -1,7 +1,7 @@
 import os
 import warnings
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
 from langchain_community.document_loaders import (
     UnstructuredURLLoader
 )
@@ -25,14 +25,14 @@ def create_vector_database():
 
     """
     # Initialize loader
-    urls = ['https://openai.com/', 'https://www.langchain.com/']
+    urls = ['https://openai.com/sora', 'https://www.langchain.com/']
     
     url_loader = UnstructuredURLLoader(urls = urls, show_progress_bar=True)
     loaded_documents = url_loader.load()
     #len(loaded_documents)
 
     # Split loaded documents into chunks
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=40)
+    text_splitter = CharacterTextSplitter(separator='\n', chunk_size=1000, chunk_overlap=200)
     chunked_documents = text_splitter.split_documents(loaded_documents)
     #len(chunked_documents)
     #chunked_documents[0]
