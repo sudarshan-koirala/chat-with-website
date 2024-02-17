@@ -3,7 +3,7 @@ Simple Streamlit as well as Chainlit app to have interaction with your website U
 
 ### Chat with your documents 🚀
 - [OpenAI model](https://platform.openai.com/docs/models) as Large Language model
-- [Ollama](https://ollama.ai/) and `mistral`as Large Language model
+- [Ollama](https://ollama.ai/) and `mistral` as Large Language model
 - [LangChain](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html) as a Framework for LLM
 - [Streamlit](https://streamlit.io/) as well as [Chainlit](https://docs.chainlit.io/) for deploying.
 
