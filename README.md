@@ -3,8 +3,9 @@ Simple Streamlit app to have interaction with your website URL.
 
 ### Chat with your documents 🚀
 - [OpenAI model](https://platform.openai.com/docs/models) as Large Language model
+- [Ollama](https://ollama.ai/) and `mistral`as Large Language model
 - [LangChain](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html) as a Framework for LLM
-- [Streamlit](https://streamlit.io/) for deploying.
+- [Streamlit](https://streamlit.io/) as well as [Chainlit](https://docs.chainlit.io/) for deploying.
 
 ## System Requirements
 
@@ -24,6 +25,8 @@ cd chat-with-website
    ```
    OPENAI_API_KEY=your_openai_api_key
    ```
+
+   For langsmith, take the environment variables from [LangSmith](https://smith.langchain.com/) website
    
 3. Create a virtualenv and activate it
    ```
@@ -37,5 +40,12 @@ cd chat-with-website
 
 5. Run the following command in your terminal to start the chat UI:
    ```
-   streamlit run chat_with_website.py
+   streamlit run chat_with_website_openai.py
+   streamlit run chat_with_website_ollama.py
    ```
+
+6. For chainlit, use the following command in your terminal.
+```
+python3 ingest.py #for ingesting
+chainlit run main.py #for chainlit ui
+```
