@@ -6,3 +6,4 @@ chromadb
 tiktoken
 unstructured
 chainlit
+libmagic
